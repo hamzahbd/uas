@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+	padding: 0;
+
+}
+
+.dua{
+	background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
+
+.tiga{
+	text-align: center;
+	text-transform: bold;
+	background-color: red;
+}
+
+.empat{
+	float: left;
+	background-color: green;
+	height: 100%;
+	
+}
+
+.lima{
+	background-color: black;
+	width: 80%;
+
+}
+
+.enam{
+	float: right;
+	background-color: orange;
+	
+}
+
+.tujuh{
+	background-color: brown;
+}
