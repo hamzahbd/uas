@@ -14,25 +14,32 @@ a{
 	display: flex;
 	width: 100%;
 	min-height: 679px;
-
 }
 .satu{
 	width: 60%;
 	margin: 0 auto;
 	background-color: white;
-
 }
+
 .dua{
   text-align: center;
   padding: 20px;
-}
-.dua.header {
-	margin:10px 0;
-	font-family: aclonica; text-transform: uppercase; font-size: 1.7em; color: #fff;
+  font-family: arial; text-transform: uppercase; font-size: 1em; color: #3AB6E6; font-style: bold;
+  background-color: #f1f1f1;
 }
 
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 
 .tiga{
+	font-family: arial;
 	text-align: center;
 	text-transform: bold;
 
@@ -64,6 +71,7 @@ ul.navi>li>a:hover{
 .empat{
 	width: 20%;
 	padding: 10px;
+	font-family: arial ;
 }
 
 a{
@@ -100,11 +108,11 @@ a{
     margin: 0;
     padding: 0;
     text-align: center;
-
 }
 
 .lima{
 	width: 60%;
+	font-family: arial;
 }
 
 .lima.flex{
@@ -118,18 +126,63 @@ a{
   margin: 0 auto 20px auto;
  }
 
+.kcard{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 45%;
+  margin: 0 2px 50% auto;
+}
+
+ .card.content{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  margin: 0 auto 20px auto;
+ }
+
+
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .container {
-  padding: 2px 16px;
+  padding: 8px 16px;
 }
 
+h4 {
+	margin: 5px auto auto auto;
+}
 
+h3 {
+	margin: 0 0 2px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 .enam{
 	width: 20%;
+	font-family: arial;
 
 	
 }
@@ -152,9 +205,29 @@ a{
 	padding: 5px;
 }
 
-.fa-facebook-square{
-	color: red;
+.fa-linkedin{
+	color: #0072b1;
 }
+
+.fa-instagram{
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+.fa-facebook-square{
+	color: #3b5998;
+}
+
+.fa-telegram-plane{
+	color: #0088cc;
+}
+
+.fa-whatsapp{
+	color: rgb(37,211,102);
+}
+
 
 .tujuh{
 	display: block;
