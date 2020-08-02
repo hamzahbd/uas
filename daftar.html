@@ -6,6 +6,13 @@
   <link rel="stylesheet" type="text/css" href="css/all.css">
   <link href="css/font.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico"/>
+  <script> 
+function proses()
+{
+var nama=document.form.namaanda.value;
+alert("Nama Anda :"+nama);
+}
+  </script>
 </head>
 <body>
 <div class="satu">
@@ -18,6 +25,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="daftar.html">Daftar</a></li>
       <li><a href="about.html">About</a></li>
+
   </ul>
 </div>
 <div class="flex">
@@ -38,21 +46,42 @@
   </div>
 </div>
 <div class="lima flex">
-  
     <div class="card content">
-        <img src="image/jenkins.png" alt="Avatar" style="width:100%">
-        <div class="container">
-        <h3><b>Jenkins</b></h3> 
-        <h4>Rp 1.200.000</h4> 
-        <p style="text-align: justify;">adalah server otomatisasi sumber terbuka dan gratis. Ini membantu mengotomatiskan bagian-bagian pengembangan perangkat lunak yang terkait dengan membangun, menguji, dan menggunakan, memfasilitasi integrasi berkelanjutan dan pengiriman berkelanjutan. Ini adalah sistem berbasis server yang berjalan dalam wadah servlet seperti Apache Tomcat. Ini mendukung control version, termasuk AccuRev, CVS, Subversion, Git, Mercurial, Perforce, ClearCase dan RTC, dan dapat menjalankan proyek-proyek berbasis Apache Ant, Apache Maven dan sbt serta skrip shell dan command batch Windows. </p>
-        </div>
-        <center>
-          <a href="daftar.html">
-            <button class="button">Daftar Sekarang</button></a>
-        </center>
+        <h1 style="text-align: center"> REGISTRATION FORM </h1>           
+       <form name=form method=post>
+        <script>
+        function proses()
+        {
+          var message=document.form.message.value;
+          alert("Terimakasih Sudah Mendaftar");
+          
+        }
+        </script>
+        <table>
+        <tr><td>Nama Depan<td>: <input type="text" name="depan" size="20" required></tr>
+        <tr><td>Nama Belakang <td>: <input type="text" name="belakang" size="20" required></tr>
+        <tr><td>Linkedin <td>: <input type="text" name="linkedin" size="20"></tr>
+        <tr><td>E-Mail <td>: <input type="text" name="email" size="30" required>
+        <tr><td>No. HP <td>: <input type="text" name="hp" oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')"></ins></tr>
+        <tr><td>Jenis Kelamin<td>:<input type="radio" name="kelamin" value="Pria">pria
+        <input type="radio" name="kelamin" value="wanita" required>wanita</tr>
+        <tr><td>Jenis Training<td>: <select size="1" name="training" required=>
+        <option>Openstack</option>
+        <option>Docker</option>
+        <option>Gitlab</option>
+        <option>Microsoft Azure</option>
+        <option>Jenkins</option>
+        <option>rkt</option>
+        <option>Kubernetes</option>
+        <option>Openshift</option>
+        </select></td></td></tr>
+        <tr><td>Keterangan <td>: <textarea name="keterangan" cols="40" rows="5"></textarea></td></td></tr>
+
+        <td><input type="button" value=Proses onclick=proses() name="message"></td>
+        </table>
+        </form>
     </div>
 </div>
-
 <div class="enam">
   <div class="me">
         <img src="image/me.png" alt="me" style="width:100%">
@@ -68,8 +97,6 @@
         </div>
     </div>
 </div>
-
-
 </div>
 <div class="tujuh">
   <p class="footer"> Cloud Devops Training Solution</p>
